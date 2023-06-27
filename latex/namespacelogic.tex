@@ -1,0 +1,390 @@
+\hypertarget{namespacelogic}{}\doxysection{logic Namespace Reference}
+\label{namespacelogic}\index{logic@{logic}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacelogic_ae93ca80c7180a44f1908ef378898700c}{dreckschwein}} (schwein\+\_\+nr, game)
+\begin{DoxyCompactList}\small\item\em dreckschwein is the function for the \char`\"{}\+Dreckschwein Karte\char`\"{} it allows the player to turn his (by default) \char`\"{}\+Sauberschwein\char`\"{} into a "{}Dreckschwein. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_aa7218934150d8170a94135e2a4fe264f}{regenkarte}} (game)
+\begin{DoxyCompactList}\small\item\em regenkarte is the function for the \char`\"{}\+Regen Karte\char`\"{} it allows the player to turn all \char`\"{}\+Dreckschwein(s)\char`\"{} from ALL players (including himself) into \char`\"{}\+Sauberschweine\char`\"{}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_aca13269de8334df979f997b524d9495b}{stallkarte}} (schwein\+\_\+nr, game)
+\begin{DoxyCompactList}\small\item\em stallkarte is the function for the \char`\"{}\+Stallkarte\char`\"{} it allows the player to turn build a \char`\"{}\+Stall\char`\"{} onto one of his \char`\"{}\+Schwein\char`\"{} \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_ad6e077acab0980e8fd7322c408d0ddc1}{blitzkarte}} (schwein\+\_\+nr, ziel\+\_\+spieler, game)
+\begin{DoxyCompactList}\small\item\em blitzkarte is the function for the \char`\"{}\+Blitz Karte\char`\"{}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_ad9e5cb2c8446f4a092718296e21c5d0d}{blitzableiter}} (schwein\+\_\+nr, game)
+\begin{DoxyCompactList}\small\item\em blitzableiter is the function for the \char`\"{}\+Blitzableiter Karte\char`\"{}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_a59e157f41973d62588c319e23f8e6462}{blitzableiter\+\_\+gold}} (schwein\+\_\+nr, game)
+\begin{DoxyCompactList}\small\item\em blitzableiter is the function for the \char`\"{}\+Blitzableiter Karte\char`\"{}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_a830e08f4cd9357817edf47bb2423bd20}{bauerschrubb}} (schwein\+\_\+nr, ziel\+\_\+spieler, game)
+\begin{DoxyCompactList}\small\item\em bauerschrubb is the function for the \char`\"{}\+Bauer schrubbt die Sau Karte\char`\"{}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_a3a1c093b3c8953f6ad006ea06b6ec4da}{baueraerger}} (schwein\+\_\+nr, game)
+\begin{DoxyCompactList}\small\item\em baueraerger is the function for the \char`\"{}\+Bauer ärgere dich Karte\char`\"{}. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_a4e02e0021fd60ef33e17d1ae641f45c1}{discard\+\_\+3}} (game)
+\begin{DoxyCompactList}\small\item\em discard\+\_\+3 is the function for discarding 3 cards at once, which is only possible if the player is not able to play any cards. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_a1cc1b5e2e8bb4f6d9f52118a7398c822}{discard\+\_\+1}} (karte, game)
+\begin{DoxyCompactList}\small\item\em discard\+\_\+1 is the function for discarding one card which is always allowed. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_a1bd94b14dcd78c8ae0a4e3e90811ad71}{reveal}} (game)
+\begin{DoxyCompactList}\small\item\em reveal is the function for revealing the cards for the current player. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_a8e249f2f778a63dfb5b74f21e943cc9d}{win\+\_\+condition}} (game)
+\begin{DoxyCompactList}\small\item\em win\+\_\+condition is the function for checking if a player has won. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespacelogic_ab08d9cfe83858b4cd3e334074f690cb0}{step}} (game)
+\begin{DoxyCompactList}\small\item\em step is the whole loop of players taking their turn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacelogic_ac0671179df51cd59fc65199988632db1}{card\+\_\+type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacelogic_a3a1c093b3c8953f6ad006ea06b6ec4da}\label{namespacelogic_a3a1c093b3c8953f6ad006ea06b6ec4da}} 
+\index{logic@{logic}!baueraerger@{baueraerger}}
+\index{baueraerger@{baueraerger}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{baueraerger()}{baueraerger()}}
+{\footnotesize\ttfamily def logic.\+baueraerger (\begin{DoxyParamCaption}\item[{}]{schwein\+\_\+nr,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+baueraerger is the function for the \char`\"{}\+Bauer ärgere dich Karte\char`\"{}. 
+
+It allows the player to install a \char`\"{}\+Bauer ärger dich nicht\char`\"{} into his \char`\"{}\+Stall\char`\"{} preventing the \char`\"{}\+Bauer schrubbt die Sau\char`\"{} karte from working
+
+
+\begin{DoxyParams}{Parameters}
+{\em schwein\+\_\+nr} & index of Schwein which the card should be used on \\
+\hline
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The function needs to meet a few conditions to allow the card to be used\+:
+\begin{DoxyItemize}
+\item It needs to check if there is a \char`\"{}\+Stall\char`\"{} installed to build a \char`\"{}\+Bauer ärger dich\char`\"{}
+\item It needs to check if there is not aready a \char`\"{}\+Bauer ärger dich Karte\char`\"{} installed
+\item It needs to check if the selected Schwein exists
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+If all are fulfilled it returns a True statement else it returns a False statement and the according ERROR message onto the board\+\_\+log. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_a830e08f4cd9357817edf47bb2423bd20}\label{namespacelogic_a830e08f4cd9357817edf47bb2423bd20}} 
+\index{logic@{logic}!bauerschrubb@{bauerschrubb}}
+\index{bauerschrubb@{bauerschrubb}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{bauerschrubb()}{bauerschrubb()}}
+{\footnotesize\ttfamily def logic.\+bauerschrubb (\begin{DoxyParamCaption}\item[{}]{schwein\+\_\+nr,  }\item[{}]{ziel\+\_\+spieler,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+bauerschrubb is the function for the \char`\"{}\+Bauer schrubbt die Sau Karte\char`\"{}. 
+
+It allows the player to turn a \char`\"{}\+Dreckscwein\char`\"{} into a \char`\"{}\+Sauberschwein\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em schwein\+\_\+nr} & index of Schwein which the card should be used on \\
+\hline
+{\em ziel\+\_\+spieler} & index of which player should be attacked \\
+\hline
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The function needs to meet a few conditions to allow the card to be used\+:
+\begin{DoxyItemize}
+\item It needs to check if there is a \char`\"{}\+Bauer-\/ärgere-\/dich-\/\+Karten\char`\"{} installed
+\item It needs to check if the selected target is not already a \char`\"{}\+Sauberschwein\char`\"{}.
+\item It needs to check if the selected enemy Player exists
+\item It needs to check if the selected Schwein exists
+\item It needs to check if the player is not attacking himself
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+If all are fulfilled it returns a True statement else it returns a False statement and the according ERROR message onto the board\+\_\+log. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_ad9e5cb2c8446f4a092718296e21c5d0d}\label{namespacelogic_ad9e5cb2c8446f4a092718296e21c5d0d}} 
+\index{logic@{logic}!blitzableiter@{blitzableiter}}
+\index{blitzableiter@{blitzableiter}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{blitzableiter()}{blitzableiter()}}
+{\footnotesize\ttfamily def logic.\+blitzableiter (\begin{DoxyParamCaption}\item[{}]{schwein\+\_\+nr,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+blitzableiter is the function for the \char`\"{}\+Blitzableiter Karte\char`\"{}. 
+
+It allows the player to build a \char`\"{}\+Blitzableiter\char`\"{} onto his \char`\"{}\+Stall\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em schwein\+\_\+nr} & index of Schwein which the card should be used on \\
+\hline
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The function needs to meet a few conditions to allow the card to be used\+:
+\begin{DoxyItemize}
+\item It needs to check if there is a \char`\"{}\+Stall\char`\"{} to build a Blitzableiter on
+\item It needs to check if there is already a \char`\"{}\+Blitzbeiter\char`\"{} installed.
+\item It needs to check if the selected Schwein exists
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+If all are fulfilled it returns a True statement else it returns a False statement and the according ERROR message onto the board\+\_\+log. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_a59e157f41973d62588c319e23f8e6462}\label{namespacelogic_a59e157f41973d62588c319e23f8e6462}} 
+\index{logic@{logic}!blitzableiter\_gold@{blitzableiter\_gold}}
+\index{blitzableiter\_gold@{blitzableiter\_gold}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{blitzableiter\_gold()}{blitzableiter\_gold()}}
+{\footnotesize\ttfamily def logic.\+blitzableiter\+\_\+gold (\begin{DoxyParamCaption}\item[{}]{schwein\+\_\+nr,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+blitzableiter is the function for the \char`\"{}\+Blitzableiter Karte\char`\"{}. 
+
+It allows the player to build a \char`\"{}\+Blitzableiter\char`\"{} onto his \char`\"{}\+Stall\char`\"{} It is the same card as the normal \char`\"{}\+Blitzableiter\char`\"{} but allows the player to directly play another card instead of wainting for the next turn.
+
+
+\begin{DoxyParams}{Parameters}
+{\em schwein\+\_\+nr} & index of Schwein which the card should be used on \\
+\hline
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The function needs to meet a few conditions to allow the card to be used\+:
+\begin{DoxyItemize}
+\item It needs to check if there is a \char`\"{}\+Stall\char`\"{} to build a Blitzableiter on
+\item It needs to check if there is already a \char`\"{}\+Blitzbeiter\char`\"{} installed.
+\item It needs to check if the selected Schwein exists
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+If all are fulfilled it returns a True statement else it returns a False statement and the according ERROR message onto the board\+\_\+log. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_ad6e077acab0980e8fd7322c408d0ddc1}\label{namespacelogic_ad6e077acab0980e8fd7322c408d0ddc1}} 
+\index{logic@{logic}!blitzkarte@{blitzkarte}}
+\index{blitzkarte@{blitzkarte}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{blitzkarte()}{blitzkarte()}}
+{\footnotesize\ttfamily def logic.\+blitzkarte (\begin{DoxyParamCaption}\item[{}]{schwein\+\_\+nr,  }\item[{}]{ziel\+\_\+spieler,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+blitzkarte is the function for the \char`\"{}\+Blitz Karte\char`\"{}. 
+
+It allows the player to destroy one of the players \char`\"{}\+Stall\char`\"{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em schwein\+\_\+nr} & index of Schwein which the card should be used on \\
+\hline
+{\em ziel\+\_\+spieler} & index of which player should be attacked \\
+\hline
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The function needs to meet a few conditions to allow the card to be used\+:
+\begin{DoxyItemize}
+\item It needs to check if the \char`\"{}\+Schwein\char`\"{} does have a \char`\"{}\+Stall\char`\"{} to destroy
+\item It needs to check if there is a \char`\"{}\+Blitzbeiter\char`\"{} installed. (The blitzableiter prevents the Stall to be destroyed by a Blitz)
+\item It needs to check if the attacked player exists
+\item It needs to check if the attacked \char`\"{}\+Schwein\char`\"{} exists
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+If all are conditions fulfilled it returns a True statement else it returns a False statement and prints the according ERROR message onto the board\+\_\+log. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_a1cc1b5e2e8bb4f6d9f52118a7398c822}\label{namespacelogic_a1cc1b5e2e8bb4f6d9f52118a7398c822}} 
+\index{logic@{logic}!discard\_1@{discard\_1}}
+\index{discard\_1@{discard\_1}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{discard\_1()}{discard\_1()}}
+{\footnotesize\ttfamily def logic.\+discard\+\_\+1 (\begin{DoxyParamCaption}\item[{}]{karte,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+discard\+\_\+1 is the function for discarding one card which is always allowed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em karte} & Index of card which should be discarded \\
+\hline
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The player can choose to discard one card and draw a new one. This is always possible, after drawing a card the players turn is over.
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_a4e02e0021fd60ef33e17d1ae641f45c1}\label{namespacelogic_a4e02e0021fd60ef33e17d1ae641f45c1}} 
+\index{logic@{logic}!discard\_3@{discard\_3}}
+\index{discard\_3@{discard\_3}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{discard\_3()}{discard\_3()}}
+{\footnotesize\ttfamily def logic.\+discard\+\_\+3 (\begin{DoxyParamCaption}\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+discard\+\_\+3 is the function for discarding 3 cards at once, which is only possible if the player is not able to play any cards. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The function needs to check if NONE of the cards in the players hand can be played For example\+: If a player has 3 \char`\"{}\+Blitzkarten\char`\"{} in his hand and no other player has a \char`\"{}\+Stall\char`\"{} the player is allowed to discard all 3 cards and draw new ones.
+
+\begin{DoxyReturn}{Returns}
+If all are fulfilled it returns a True statement else it returns a False statement and the according ERROR message onto the board\+\_\+log. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_ae93ca80c7180a44f1908ef378898700c}\label{namespacelogic_ae93ca80c7180a44f1908ef378898700c}} 
+\index{logic@{logic}!dreckschwein@{dreckschwein}}
+\index{dreckschwein@{dreckschwein}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{dreckschwein()}{dreckschwein()}}
+{\footnotesize\ttfamily def logic.\+dreckschwein (\begin{DoxyParamCaption}\item[{}]{schwein\+\_\+nr,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+dreckschwein is the function for the \char`\"{}\+Dreckschwein Karte\char`\"{} it allows the player to turn his (by default) \char`\"{}\+Sauberschwein\char`\"{} into a "{}Dreckschwein. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schwein\+\_\+nr} & index of Schwein which the card should be used on \\
+\hline
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The function needs to meet a few... to allow the card to be used\+:
+\begin{DoxyItemize}
+\item It needs to check if the Schwein is not already dirty
+\item It needs to check if the Schwein does exist
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+If all conditions are fulfilled it returns a True statement else it returns a False statement and prints the according ERROR message onto the board\+\_\+log. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_aa7218934150d8170a94135e2a4fe264f}\label{namespacelogic_aa7218934150d8170a94135e2a4fe264f}} 
+\index{logic@{logic}!regenkarte@{regenkarte}}
+\index{regenkarte@{regenkarte}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{regenkarte()}{regenkarte()}}
+{\footnotesize\ttfamily def logic.\+regenkarte (\begin{DoxyParamCaption}\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+regenkarte is the function for the \char`\"{}\+Regen Karte\char`\"{} it allows the player to turn all \char`\"{}\+Dreckschwein(s)\char`\"{} from ALL players (including himself) into \char`\"{}\+Sauberschweine\char`\"{}. 
+
+Only \char`\"{}\+Sauberschweine\char`\"{} who have a \char`\"{}\+Stall\char`\"{} are not affected by this card.
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The function doesn\textquotesingle{}t need to check for any condition and can be played always. ~\newline
+ \begin{DoxyReturn}{Returns}
+None ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_a1bd94b14dcd78c8ae0a4e3e90811ad71}\label{namespacelogic_a1bd94b14dcd78c8ae0a4e3e90811ad71}} 
+\index{logic@{logic}!reveal@{reveal}}
+\index{reveal@{reveal}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{reveal()}{reveal()}}
+{\footnotesize\ttfamily def logic.\+reveal (\begin{DoxyParamCaption}\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+reveal is the function for revealing the cards for the current player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The current player needs to have his cards revealed to know which cards he can play. After every turn the cards need to be hidden again and the cards of the next player need to revealed
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_aca13269de8334df979f997b524d9495b}\label{namespacelogic_aca13269de8334df979f997b524d9495b}} 
+\index{logic@{logic}!stallkarte@{stallkarte}}
+\index{stallkarte@{stallkarte}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{stallkarte()}{stallkarte()}}
+{\footnotesize\ttfamily def logic.\+stallkarte (\begin{DoxyParamCaption}\item[{}]{schwein\+\_\+nr,  }\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+stallkarte is the function for the \char`\"{}\+Stallkarte\char`\"{} it allows the player to turn build a \char`\"{}\+Stall\char`\"{} onto one of his \char`\"{}\+Schwein\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em schwein\+\_\+nr} & index of Schwein which the card should be used on \\
+\hline
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The function needs to check a few... to allow the card to be used\+:
+\begin{DoxyItemize}
+\item It needs to check if the Schwein does not already have a \char`\"{}\+Stall\char`\"{}
+\item It needs to check if the Schwein does exist
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+If all are conditions fulfilled it returns a True statement else it returns a False statement and prints the according ERROR message onto the board\+\_\+log. ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_ab08d9cfe83858b4cd3e334074f690cb0}\label{namespacelogic_ab08d9cfe83858b4cd3e334074f690cb0}} 
+\index{logic@{logic}!step@{step}}
+\index{step@{step}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily def logic.\+step (\begin{DoxyParamCaption}\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+step is the whole loop of players taking their turn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+The loop consits of a simple question and answer sequence. The user is can only input \char`\"{}correct\char`\"{} inputs, meaning if there is a typo or a non allowed character being input the user is put back to the first question.
+
+\begin{DoxyReturn}{Returns}
+winner returns the player who has won the game 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespacelogic_a8e249f2f778a63dfb5b74f21e943cc9d}\label{namespacelogic_a8e249f2f778a63dfb5b74f21e943cc9d}} 
+\index{logic@{logic}!win\_condition@{win\_condition}}
+\index{win\_condition@{win\_condition}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{win\_condition()}{win\_condition()}}
+{\footnotesize\ttfamily def logic.\+win\+\_\+condition (\begin{DoxyParamCaption}\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+win\+\_\+condition is the function for checking if a player has won. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & directory\\
+\hline
+\end{DoxyParams}
+For winning a game of Dreckschwein one player needs to have all his \char`\"{}\+Sauberschweine\char`\"{} turned into \char`\"{}\+Dreckschweine\char`\"{}. After every turn it needs to be checked if the turn before the player made a winning move
+
+\begin{DoxyReturn}{Returns}
+False if there was no winner last turn 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacelogic_ac0671179df51cd59fc65199988632db1}\label{namespacelogic_ac0671179df51cd59fc65199988632db1}} 
+\index{logic@{logic}!card\_type@{card\_type}}
+\index{card\_type@{card\_type}!logic@{logic}}
+\doxysubsubsection{\texorpdfstring{card\_type}{card\_type}}
+{\footnotesize\ttfamily list logic.\+card\+\_\+type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = [\textcolor{stringliteral}{"{}Sauberschwein"{}},\textcolor{stringliteral}{"{}Drecksau"{}},\textcolor{stringliteral}{"{}Matschkarten"{}}, \textcolor{stringliteral}{"{}Regenkarten"{}},\textcolor{stringliteral}{"{}Stallkarten"{}},\textcolor{stringliteral}{"{}Blitzkarten"{}}, }
+\DoxyCodeLine{2         \textcolor{stringliteral}{"{}Blitzableiterkarten"{}}, \textcolor{stringliteral}{"{}Bauer-\/schrubbt-\/die-\/Sau-\/Karten"{}}, }
+\DoxyCodeLine{3         \textcolor{stringliteral}{"{}Bauer-\/ärgere-\/dich-\/Karten"{}},\textcolor{stringliteral}{"{}Leer"{}},\textcolor{stringliteral}{"{}Unbekannt"{}},\textcolor{stringliteral}{"{}Blitzableiterkarten-\/gold"{}}]}
+
+\end{DoxyCode}

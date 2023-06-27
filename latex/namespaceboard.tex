@@ -1,0 +1,468 @@
+\hypertarget{namespaceboard}{}\doxysection{board Namespace Reference}
+\label{namespaceboard}\index{board@{board}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespaceboard_a064f065791e87e765229df601142ccce}{nspieler}} ()
+\begin{DoxyCompactList}\small\item\em Fragt den Nutzer, die Anzahl von Spielern. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_a960b147613cdf3a4148903cc5376ad71}{clear\+Console}} ()
+\begin{DoxyCompactList}\small\item\em clears the console \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_a5cc329b3b2fa5044a262dc237d2aee78}{pos}} (y, x)
+\begin{DoxyCompactList}\small\item\em returns position of the Cursor \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_a14a26c127a3ab2808f37506c3f5f2534}{white\+\_\+board}} ()
+\begin{DoxyCompactList}\small\item\em macht ein Spiel Board mit Rahmen, aber ohne Karten. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_a8f8da14ea015b7e010f182faa30174a1}{WRAP}} (card\+\_\+name, b, coordinate)
+\begin{DoxyCompactList}\small\item\em Wrapped den Namen von Karte in einer Breite von b. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_a512c9c60319fc9529fdd9ae778439f70}{draw\+\_\+card}} (card\+\_\+name, b, coordinate)
+\begin{DoxyCompactList}\small\item\em Zeichnet die Karte auf dem Schirm. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_a8a93532602884768704a4bfcce0bf8c5}{draw\+\_\+pfeil}} (y, x)
+\begin{DoxyCompactList}\small\item\em Zeichnet den Pfeil, was den Spieler zeigt, der dran ist. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_a2f24954d935bd3e526106bdf6a9cc9bc}{input\+\_\+ask}} (game, s=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Das ist interface zwischen \mbox{\hyperlink{board_8py}{board.\+py}} und \mbox{\hyperlink{logic_8py}{logic.\+py}} Es gibt an Spieler weiter, was logic Module verlangt und gibt das Input von Spieler an logic Module zurück. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_abf4c6a70539859f2078592ec8489c2c3}{wrap\+\_\+log}} (b, coordinate)
+\begin{DoxyCompactList}\small\item\em Wrapped den Log in einer Breite von b. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_a8d34eb4ce8c4350d0542ee8f36f5d894}{log\+\_\+spiel}} (s=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em appended das Parameter s an log Liste ~\newline
+ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_a66eed16b73bbeba62cfbbfefefb8ff2b}{draw\+\_\+card\+\_\+\+Nr}} (i, y, x)
+\begin{DoxyCompactList}\small\item\em Zeichnet die Nummer von jeder Karte unten auf dem Spiel board. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_a9ca09a5775c84e1acbef061437eb652f}{draw\+\_\+staple}} (game, y, x)
+\begin{DoxyCompactList}\small\item\em Zeichnet den Staple auf jedem Schwein. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_ad640e34de5323877ca7f99a07dfb5477}{draw\+\_\+spieler\+\_\+\+Nr}} (spieler, y, x)
+\begin{DoxyCompactList}\small\item\em Zeichnet die Nummer von jedem Spieler unten auf dem Spiel board. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespaceboard_aa55c992b12d18eccb3e25b163da2c813}{draw\+\_\+board}} (game)
+\begin{DoxyCompactList}\small\item\em Interface zwischen logic und board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespaceboard_a910e8e807eb739a7417e230f9081bf64}{card\+\_\+type}}
+\item 
+list \mbox{\hyperlink{namespaceboard_ad75dde13f50a8b99eb7add1364b2c58a}{FORES}} = \mbox{[} Fore.\+BLACK, Fore.\+RED, Fore.\+GREEN, Fore.\+YELLOW, Fore.\+BLUE, Fore.\+MAGENTA, Fore.\+CYAN, Fore.\+WHITE \mbox{]}
+\item 
+list \mbox{\hyperlink{namespaceboard_a62a4b06970ea481690c9113fa93afc2c}{BACKS}} = \mbox{[} Back.\+BLACK, Back.\+RED, Back.\+GREEN, Back.\+YELLOW, Back.\+BLUE, Back.\+MAGENTA, Back.\+CYAN, Back.\+WHITE \mbox{]}
+\item 
+list \mbox{\hyperlink{namespaceboard_a81a8d781b78cf893be83a2d10750d7ec}{STYLES}} = \mbox{[} Style.\+DIM, Style.\+NORMAL, Style.\+BRIGHT \mbox{]}
+\item 
+\mbox{\hyperlink{namespaceboard_a4e7df5edcb6b942a6a269fb29629b038}{MINY}}
+\item 
+\mbox{\hyperlink{namespaceboard_a9dd1a07d6445c7baa7a69d1172750442}{MAXY}}
+\item 
+\mbox{\hyperlink{namespaceboard_a101888d1189c44b49ca7af102f51845d}{MINX}}
+\item 
+\mbox{\hyperlink{namespaceboard_a575f3fe8bf7397415c13954dd7d9fc75}{MAXX}}
+\item 
+\mbox{\hyperlink{namespaceboard_a1b03bbf171e7ce0ed0155f6922107512}{RANGEX}} = \mbox{\hyperlink{namespaceboard_a575f3fe8bf7397415c13954dd7d9fc75}{MAXX}}-\/\mbox{\hyperlink{namespaceboard_a101888d1189c44b49ca7af102f51845d}{MINX}}
+\item 
+\mbox{\hyperlink{namespaceboard_a005794d93e0fea598be3d83ea7e0e661}{RANGEY}} = \mbox{\hyperlink{namespaceboard_a9dd1a07d6445c7baa7a69d1172750442}{MAXY}}-\/\mbox{\hyperlink{namespaceboard_a4e7df5edcb6b942a6a269fb29629b038}{MINY}}
+\item 
+\mbox{\hyperlink{namespaceboard_a437931d501b6372463908c128e7585aa}{Min\+FrameY}}
+\item 
+\mbox{\hyperlink{namespaceboard_a023f230b64cffc6ea3904b87d682fa7f}{Max\+FrameY}}
+\item 
+\mbox{\hyperlink{namespaceboard_a16e2aeebb9748528bf8ced836864f6a5}{Min\+FrameX}}
+\item 
+\mbox{\hyperlink{namespaceboard_a2b726639c27ba23ce5bf71551b2e435a}{Max\+FrameX}}
+\item 
+\mbox{\hyperlink{namespaceboard_a550d813618d9fcbbb9ef5269206f39bb}{Range\+FrameY}} = \mbox{\hyperlink{namespaceboard_a023f230b64cffc6ea3904b87d682fa7f}{Max\+FrameY}}-\/\mbox{\hyperlink{namespaceboard_a437931d501b6372463908c128e7585aa}{Min\+FrameY}}
+\item 
+\mbox{\hyperlink{namespaceboard_a9710c36ff5ffb0c673b1f42bf905f35f}{Range\+FrameX}} = \mbox{\hyperlink{namespaceboard_a2b726639c27ba23ce5bf71551b2e435a}{Max\+FrameX}}-\/\mbox{\hyperlink{namespaceboard_a16e2aeebb9748528bf8ced836864f6a5}{Min\+FrameX}}
+\item 
+\mbox{\hyperlink{namespaceboard_aceed482ea5ffbcb75bef203e51548a67}{Min\+LogY}}
+\item 
+\mbox{\hyperlink{namespaceboard_a358b9f34ce1315b8c55b693567752787}{Min\+LogX}}
+\item 
+list \mbox{\hyperlink{namespaceboard_af62dbfecd0425a2f444ef8129dd64a33}{log\+\_\+liste}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceboard_a960b147613cdf3a4148903cc5376ad71}\label{namespaceboard_a960b147613cdf3a4148903cc5376ad71}} 
+\index{board@{board}!clearConsole@{clearConsole}}
+\index{clearConsole@{clearConsole}!board@{board}}
+\doxysubsubsection{\texorpdfstring{clearConsole()}{clearConsole()}}
+{\footnotesize\ttfamily def board.\+clear\+Console (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+clears the console 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_aa55c992b12d18eccb3e25b163da2c813}\label{namespaceboard_aa55c992b12d18eccb3e25b163da2c813}} 
+\index{board@{board}!draw\_board@{draw\_board}}
+\index{draw\_board@{draw\_board}!board@{board}}
+\doxysubsubsection{\texorpdfstring{draw\_board()}{draw\_board()}}
+{\footnotesize\ttfamily def board.\+draw\+\_\+board (\begin{DoxyParamCaption}\item[{}]{game }\end{DoxyParamCaption})}
+
+
+
+Interface zwischen logic und board. 
+
+Es wird ein Board gezeichnet basiert auf dem Game dictionary ~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em game} & Das Game dictionary \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_a512c9c60319fc9529fdd9ae778439f70}\label{namespaceboard_a512c9c60319fc9529fdd9ae778439f70}} 
+\index{board@{board}!draw\_card@{draw\_card}}
+\index{draw\_card@{draw\_card}!board@{board}}
+\doxysubsubsection{\texorpdfstring{draw\_card()}{draw\_card()}}
+{\footnotesize\ttfamily def board.\+draw\+\_\+card (\begin{DoxyParamCaption}\item[{}]{card\+\_\+name,  }\item[{}]{b,  }\item[{}]{coordinate }\end{DoxyParamCaption})}
+
+
+
+Zeichnet die Karte auf dem Schirm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card\+\_\+name} & Der Name von Karte \\
+\hline
+{\em b} & Die Breite von Karte \\
+\hline
+{\em coordinate} & Tuple, die die Koordinaten von top left von Karte ist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_a66eed16b73bbeba62cfbbfefefb8ff2b}\label{namespaceboard_a66eed16b73bbeba62cfbbfefefb8ff2b}} 
+\index{board@{board}!draw\_card\_Nr@{draw\_card\_Nr}}
+\index{draw\_card\_Nr@{draw\_card\_Nr}!board@{board}}
+\doxysubsubsection{\texorpdfstring{draw\_card\_Nr()}{draw\_card\_Nr()}}
+{\footnotesize\ttfamily def board.\+draw\+\_\+card\+\_\+\+Nr (\begin{DoxyParamCaption}\item[{}]{i,  }\item[{}]{y,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+Zeichnet die Nummer von jeder Karte unten auf dem Spiel board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & y Koordinate ~\newline
+ \\
+\hline
+{\em x} & x Koordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_a8a93532602884768704a4bfcce0bf8c5}\label{namespaceboard_a8a93532602884768704a4bfcce0bf8c5}} 
+\index{board@{board}!draw\_pfeil@{draw\_pfeil}}
+\index{draw\_pfeil@{draw\_pfeil}!board@{board}}
+\doxysubsubsection{\texorpdfstring{draw\_pfeil()}{draw\_pfeil()}}
+{\footnotesize\ttfamily def board.\+draw\+\_\+pfeil (\begin{DoxyParamCaption}\item[{}]{y,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+Zeichnet den Pfeil, was den Spieler zeigt, der dran ist. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & y Koordinate ~\newline
+ \\
+\hline
+{\em x} & x Koordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_ad640e34de5323877ca7f99a07dfb5477}\label{namespaceboard_ad640e34de5323877ca7f99a07dfb5477}} 
+\index{board@{board}!draw\_spieler\_Nr@{draw\_spieler\_Nr}}
+\index{draw\_spieler\_Nr@{draw\_spieler\_Nr}!board@{board}}
+\doxysubsubsection{\texorpdfstring{draw\_spieler\_Nr()}{draw\_spieler\_Nr()}}
+{\footnotesize\ttfamily def board.\+draw\+\_\+spieler\+\_\+\+Nr (\begin{DoxyParamCaption}\item[{}]{spieler,  }\item[{}]{y,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+Zeichnet die Nummer von jedem Spieler unten auf dem Spiel board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & y Koordinate ~\newline
+ \\
+\hline
+{\em x} & x Koordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_a9ca09a5775c84e1acbef061437eb652f}\label{namespaceboard_a9ca09a5775c84e1acbef061437eb652f}} 
+\index{board@{board}!draw\_staple@{draw\_staple}}
+\index{draw\_staple@{draw\_staple}!board@{board}}
+\doxysubsubsection{\texorpdfstring{draw\_staple()}{draw\_staple()}}
+{\footnotesize\ttfamily def board.\+draw\+\_\+staple (\begin{DoxyParamCaption}\item[{}]{game,  }\item[{}]{y,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+Zeichnet den Staple auf jedem Schwein. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Das ist das Game dictionary \\
+\hline
+{\em y} & y Koordinate ~\newline
+ \\
+\hline
+{\em x} & x Koordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_a2f24954d935bd3e526106bdf6a9cc9bc}\label{namespaceboard_a2f24954d935bd3e526106bdf6a9cc9bc}} 
+\index{board@{board}!input\_ask@{input\_ask}}
+\index{input\_ask@{input\_ask}!board@{board}}
+\doxysubsubsection{\texorpdfstring{input\_ask()}{input\_ask()}}
+{\footnotesize\ttfamily def board.\+input\+\_\+ask (\begin{DoxyParamCaption}\item[{}]{game,  }\item[{}]{s = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Das ist interface zwischen \mbox{\hyperlink{board_8py}{board.\+py}} und \mbox{\hyperlink{logic_8py}{logic.\+py}} Es gibt an Spieler weiter, was logic Module verlangt und gibt das Input von Spieler an logic Module zurück. 
+
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em game} & das Dictionary von \mbox{\hyperlink{init_8py}{init.\+py}} \\
+\hline
+{\em s} & s wird angezeigt, bevor der Spieler etwas eingibt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+input von Spieler 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_a8d34eb4ce8c4350d0542ee8f36f5d894}\label{namespaceboard_a8d34eb4ce8c4350d0542ee8f36f5d894}} 
+\index{board@{board}!log\_spiel@{log\_spiel}}
+\index{log\_spiel@{log\_spiel}!board@{board}}
+\doxysubsubsection{\texorpdfstring{log\_spiel()}{log\_spiel()}}
+{\footnotesize\ttfamily def board.\+log\+\_\+spiel (\begin{DoxyParamCaption}\item[{}]{s = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+appended das Parameter s an log Liste ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & string, wo apppeded wird an Log Liste \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None ~\newline
+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_a064f065791e87e765229df601142ccce}\label{namespaceboard_a064f065791e87e765229df601142ccce}} 
+\index{board@{board}!nspieler@{nspieler}}
+\index{nspieler@{nspieler}!board@{board}}
+\doxysubsubsection{\texorpdfstring{nspieler()}{nspieler()}}
+{\footnotesize\ttfamily def board.\+nspieler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fragt den Nutzer, die Anzahl von Spielern. 
+
+Nutzer kann zwischen 2,3,4 wählen. ~\newline
+ \mbox{\Hypertarget{namespaceboard_a5cc329b3b2fa5044a262dc237d2aee78}\label{namespaceboard_a5cc329b3b2fa5044a262dc237d2aee78}} 
+\index{board@{board}!pos@{pos}}
+\index{pos@{pos}!board@{board}}
+\doxysubsubsection{\texorpdfstring{pos()}{pos()}}
+{\footnotesize\ttfamily def board.\+pos (\begin{DoxyParamCaption}\item[{}]{y,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+
+
+returns position of the Cursor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & coordinate y \\
+\hline
+{\em x} & coordinate x \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns position of the Cursor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_a14a26c127a3ab2808f37506c3f5f2534}\label{namespaceboard_a14a26c127a3ab2808f37506c3f5f2534}} 
+\index{board@{board}!white\_board@{white\_board}}
+\index{white\_board@{white\_board}!board@{board}}
+\doxysubsubsection{\texorpdfstring{white\_board()}{white\_board()}}
+{\footnotesize\ttfamily def board.\+white\+\_\+board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+macht ein Spiel Board mit Rahmen, aber ohne Karten. 
+
+Die Funktion wird gebraucht, um das Board zu initialisieren \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_a8f8da14ea015b7e010f182faa30174a1}\label{namespaceboard_a8f8da14ea015b7e010f182faa30174a1}} 
+\index{board@{board}!WRAP@{WRAP}}
+\index{WRAP@{WRAP}!board@{board}}
+\doxysubsubsection{\texorpdfstring{WRAP()}{WRAP()}}
+{\footnotesize\ttfamily def board.\+WRAP (\begin{DoxyParamCaption}\item[{}]{card\+\_\+name,  }\item[{}]{b,  }\item[{}]{coordinate }\end{DoxyParamCaption})}
+
+
+
+Wrapped den Namen von Karte in einer Breite von b. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card\+\_\+name} & Der Name von Karte \\
+\hline
+{\em b} & Die Breite von Karte @coordinate coordinate Tuple, die die Koordinaten von top left von Karte ist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{namespaceboard_abf4c6a70539859f2078592ec8489c2c3}\label{namespaceboard_abf4c6a70539859f2078592ec8489c2c3}} 
+\index{board@{board}!wrap\_log@{wrap\_log}}
+\index{wrap\_log@{wrap\_log}!board@{board}}
+\doxysubsubsection{\texorpdfstring{wrap\_log()}{wrap\_log()}}
+{\footnotesize\ttfamily def board.\+wrap\+\_\+log (\begin{DoxyParamCaption}\item[{}]{b,  }\item[{}]{coordinate }\end{DoxyParamCaption})}
+
+
+
+Wrapped den Log in einer Breite von b. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & Die Breite von log \\
+\hline
+{\em coordinate} & coordinate Tuple, die die Koordinaten von top left von log ist \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceboard_a62a4b06970ea481690c9113fa93afc2c}\label{namespaceboard_a62a4b06970ea481690c9113fa93afc2c}} 
+\index{board@{board}!BACKS@{BACKS}}
+\index{BACKS@{BACKS}!board@{board}}
+\doxysubsubsection{\texorpdfstring{BACKS}{BACKS}}
+{\footnotesize\ttfamily list board.\+BACKS = \mbox{[} Back.\+BLACK, Back.\+RED, Back.\+GREEN, Back.\+YELLOW, Back.\+BLUE, Back.\+MAGENTA, Back.\+CYAN, Back.\+WHITE \mbox{]}}
+
+\mbox{\Hypertarget{namespaceboard_a910e8e807eb739a7417e230f9081bf64}\label{namespaceboard_a910e8e807eb739a7417e230f9081bf64}} 
+\index{board@{board}!card\_type@{card\_type}}
+\index{card\_type@{card\_type}!board@{board}}
+\doxysubsubsection{\texorpdfstring{card\_type}{card\_type}}
+{\footnotesize\ttfamily list board.\+card\+\_\+type}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 = [\textcolor{stringliteral}{"{}Sauberschwein"{}},\textcolor{stringliteral}{"{}Drecksau"{}},\textcolor{stringliteral}{"{}Matschkarten"{}}, \textcolor{stringliteral}{"{}Regenkarten"{}},\textcolor{stringliteral}{"{}Stallkarten"{}},\textcolor{stringliteral}{"{}Blitzkarten"{}}, }
+\DoxyCodeLine{2         \textcolor{stringliteral}{"{}Blitzableiterkarten"{}}, \textcolor{stringliteral}{"{}Blitzableiterkarten-\/gold"{}},\textcolor{stringliteral}{"{}Bauer-\/schrubbt-\/die-\/Sau-\/Karten"{}}, }
+\DoxyCodeLine{3         \textcolor{stringliteral}{"{}Bauer-\/ärgere-\/dich-\/Karten"{}},\textcolor{stringliteral}{"{}Leer"{}},\textcolor{stringliteral}{"{}Unbekannt"{}}]}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceboard_ad75dde13f50a8b99eb7add1364b2c58a}\label{namespaceboard_ad75dde13f50a8b99eb7add1364b2c58a}} 
+\index{board@{board}!FORES@{FORES}}
+\index{FORES@{FORES}!board@{board}}
+\doxysubsubsection{\texorpdfstring{FORES}{FORES}}
+{\footnotesize\ttfamily list board.\+FORES = \mbox{[} Fore.\+BLACK, Fore.\+RED, Fore.\+GREEN, Fore.\+YELLOW, Fore.\+BLUE, Fore.\+MAGENTA, Fore.\+CYAN, Fore.\+WHITE \mbox{]}}
+
+\mbox{\Hypertarget{namespaceboard_af62dbfecd0425a2f444ef8129dd64a33}\label{namespaceboard_af62dbfecd0425a2f444ef8129dd64a33}} 
+\index{board@{board}!log\_liste@{log\_liste}}
+\index{log\_liste@{log\_liste}!board@{board}}
+\doxysubsubsection{\texorpdfstring{log\_liste}{log\_liste}}
+{\footnotesize\ttfamily list board.\+log\+\_\+liste = \mbox{[}$\,$\mbox{]}}
+
+\mbox{\Hypertarget{namespaceboard_a2b726639c27ba23ce5bf71551b2e435a}\label{namespaceboard_a2b726639c27ba23ce5bf71551b2e435a}} 
+\index{board@{board}!MaxFrameX@{MaxFrameX}}
+\index{MaxFrameX@{MaxFrameX}!board@{board}}
+\doxysubsubsection{\texorpdfstring{MaxFrameX}{MaxFrameX}}
+{\footnotesize\ttfamily board.\+Max\+FrameX}
+
+\mbox{\Hypertarget{namespaceboard_a023f230b64cffc6ea3904b87d682fa7f}\label{namespaceboard_a023f230b64cffc6ea3904b87d682fa7f}} 
+\index{board@{board}!MaxFrameY@{MaxFrameY}}
+\index{MaxFrameY@{MaxFrameY}!board@{board}}
+\doxysubsubsection{\texorpdfstring{MaxFrameY}{MaxFrameY}}
+{\footnotesize\ttfamily board.\+Max\+FrameY}
+
+\mbox{\Hypertarget{namespaceboard_a575f3fe8bf7397415c13954dd7d9fc75}\label{namespaceboard_a575f3fe8bf7397415c13954dd7d9fc75}} 
+\index{board@{board}!MAXX@{MAXX}}
+\index{MAXX@{MAXX}!board@{board}}
+\doxysubsubsection{\texorpdfstring{MAXX}{MAXX}}
+{\footnotesize\ttfamily board.\+MAXX}
+
+\mbox{\Hypertarget{namespaceboard_a9dd1a07d6445c7baa7a69d1172750442}\label{namespaceboard_a9dd1a07d6445c7baa7a69d1172750442}} 
+\index{board@{board}!MAXY@{MAXY}}
+\index{MAXY@{MAXY}!board@{board}}
+\doxysubsubsection{\texorpdfstring{MAXY}{MAXY}}
+{\footnotesize\ttfamily board.\+MAXY}
+
+\mbox{\Hypertarget{namespaceboard_a16e2aeebb9748528bf8ced836864f6a5}\label{namespaceboard_a16e2aeebb9748528bf8ced836864f6a5}} 
+\index{board@{board}!MinFrameX@{MinFrameX}}
+\index{MinFrameX@{MinFrameX}!board@{board}}
+\doxysubsubsection{\texorpdfstring{MinFrameX}{MinFrameX}}
+{\footnotesize\ttfamily board.\+Min\+FrameX}
+
+\mbox{\Hypertarget{namespaceboard_a437931d501b6372463908c128e7585aa}\label{namespaceboard_a437931d501b6372463908c128e7585aa}} 
+\index{board@{board}!MinFrameY@{MinFrameY}}
+\index{MinFrameY@{MinFrameY}!board@{board}}
+\doxysubsubsection{\texorpdfstring{MinFrameY}{MinFrameY}}
+{\footnotesize\ttfamily board.\+Min\+FrameY}
+
+\mbox{\Hypertarget{namespaceboard_a358b9f34ce1315b8c55b693567752787}\label{namespaceboard_a358b9f34ce1315b8c55b693567752787}} 
+\index{board@{board}!MinLogX@{MinLogX}}
+\index{MinLogX@{MinLogX}!board@{board}}
+\doxysubsubsection{\texorpdfstring{MinLogX}{MinLogX}}
+{\footnotesize\ttfamily board.\+Min\+LogX}
+
+\mbox{\Hypertarget{namespaceboard_aceed482ea5ffbcb75bef203e51548a67}\label{namespaceboard_aceed482ea5ffbcb75bef203e51548a67}} 
+\index{board@{board}!MinLogY@{MinLogY}}
+\index{MinLogY@{MinLogY}!board@{board}}
+\doxysubsubsection{\texorpdfstring{MinLogY}{MinLogY}}
+{\footnotesize\ttfamily board.\+Min\+LogY}
+
+\mbox{\Hypertarget{namespaceboard_a101888d1189c44b49ca7af102f51845d}\label{namespaceboard_a101888d1189c44b49ca7af102f51845d}} 
+\index{board@{board}!MINX@{MINX}}
+\index{MINX@{MINX}!board@{board}}
+\doxysubsubsection{\texorpdfstring{MINX}{MINX}}
+{\footnotesize\ttfamily board.\+MINX}
+
+\mbox{\Hypertarget{namespaceboard_a4e7df5edcb6b942a6a269fb29629b038}\label{namespaceboard_a4e7df5edcb6b942a6a269fb29629b038}} 
+\index{board@{board}!MINY@{MINY}}
+\index{MINY@{MINY}!board@{board}}
+\doxysubsubsection{\texorpdfstring{MINY}{MINY}}
+{\footnotesize\ttfamily board.\+MINY}
+
+\mbox{\Hypertarget{namespaceboard_a9710c36ff5ffb0c673b1f42bf905f35f}\label{namespaceboard_a9710c36ff5ffb0c673b1f42bf905f35f}} 
+\index{board@{board}!RangeFrameX@{RangeFrameX}}
+\index{RangeFrameX@{RangeFrameX}!board@{board}}
+\doxysubsubsection{\texorpdfstring{RangeFrameX}{RangeFrameX}}
+{\footnotesize\ttfamily board.\+Range\+FrameX = \mbox{\hyperlink{namespaceboard_a2b726639c27ba23ce5bf71551b2e435a}{Max\+FrameX}}-\/\mbox{\hyperlink{namespaceboard_a16e2aeebb9748528bf8ced836864f6a5}{Min\+FrameX}}}
+
+\mbox{\Hypertarget{namespaceboard_a550d813618d9fcbbb9ef5269206f39bb}\label{namespaceboard_a550d813618d9fcbbb9ef5269206f39bb}} 
+\index{board@{board}!RangeFrameY@{RangeFrameY}}
+\index{RangeFrameY@{RangeFrameY}!board@{board}}
+\doxysubsubsection{\texorpdfstring{RangeFrameY}{RangeFrameY}}
+{\footnotesize\ttfamily board.\+Range\+FrameY = \mbox{\hyperlink{namespaceboard_a023f230b64cffc6ea3904b87d682fa7f}{Max\+FrameY}}-\/\mbox{\hyperlink{namespaceboard_a437931d501b6372463908c128e7585aa}{Min\+FrameY}}}
+
+\mbox{\Hypertarget{namespaceboard_a1b03bbf171e7ce0ed0155f6922107512}\label{namespaceboard_a1b03bbf171e7ce0ed0155f6922107512}} 
+\index{board@{board}!RANGEX@{RANGEX}}
+\index{RANGEX@{RANGEX}!board@{board}}
+\doxysubsubsection{\texorpdfstring{RANGEX}{RANGEX}}
+{\footnotesize\ttfamily board.\+RANGEX = \mbox{\hyperlink{namespaceboard_a575f3fe8bf7397415c13954dd7d9fc75}{MAXX}}-\/\mbox{\hyperlink{namespaceboard_a101888d1189c44b49ca7af102f51845d}{MINX}}}
+
+\mbox{\Hypertarget{namespaceboard_a005794d93e0fea598be3d83ea7e0e661}\label{namespaceboard_a005794d93e0fea598be3d83ea7e0e661}} 
+\index{board@{board}!RANGEY@{RANGEY}}
+\index{RANGEY@{RANGEY}!board@{board}}
+\doxysubsubsection{\texorpdfstring{RANGEY}{RANGEY}}
+{\footnotesize\ttfamily board.\+RANGEY = \mbox{\hyperlink{namespaceboard_a9dd1a07d6445c7baa7a69d1172750442}{MAXY}}-\/\mbox{\hyperlink{namespaceboard_a4e7df5edcb6b942a6a269fb29629b038}{MINY}}}
+
+\mbox{\Hypertarget{namespaceboard_a81a8d781b78cf893be83a2d10750d7ec}\label{namespaceboard_a81a8d781b78cf893be83a2d10750d7ec}} 
+\index{board@{board}!STYLES@{STYLES}}
+\index{STYLES@{STYLES}!board@{board}}
+\doxysubsubsection{\texorpdfstring{STYLES}{STYLES}}
+{\footnotesize\ttfamily list board.\+STYLES = \mbox{[} Style.\+DIM, Style.\+NORMAL, Style.\+BRIGHT \mbox{]}}
+
